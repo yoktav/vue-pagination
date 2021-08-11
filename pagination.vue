@@ -225,48 +225,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/abstracts/index';
-
-.c-pagination {
-  $padding: px-to-rem(16px);
-
-  @include list-unstyled($margin-bottom: 0);
-
-  display: flex;
-  align-items: center;
-  margin-top: 0;
-  background-color: $color-aqua-haze;
-  border-radius: px-to-rem(24px);
-  font-size: $g-font-size-small;
-
-  &__button {
-    display: flex;
-    height: px-to-rem(24px);
-    align-items: center;
-    justify-content: center;
-    padding: $padding ($padding / 1.6);
-    cursor: pointer;
-    line-height: 1;
-
-    &:hover,
-    &.is-active {
-      color: $color-primary;
-    }
-
-    &.is-active {
-      color: $color-primary;
-      font-weight: 500;
-    }
-  }
-
-  &__item {
-    &:first-of-type .c-pagination__button {
-      padding-left: $padding;
-    }
-
-    &:last-of-type .c-pagination__button {
-      padding-right: $padding;
-    }
-  }
-}
+@import './Pagination';
 </style>
